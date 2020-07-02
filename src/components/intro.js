@@ -24,6 +24,11 @@ const IntroWrapper = styled.div`
     font-family: "Bebas Neue";
     color: black;
   }
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
 `
 
 export default Intro

@@ -49,7 +49,7 @@ const IndexPage = () => (
 PRODUCTION, DESIGN, & MARKETING"
         />
       </Background>
-      <Section>
+      <Section style={{ padding: "4rem 0rem" }}>
         <Column>
           <ServiceColumn
             service="Marketing"
@@ -79,7 +79,7 @@ PRODUCTION, DESIGN, & MARKETING"
       <Background>
         <Intro intro="THIRD PARTY LOGISTICS SERVICES" />
       </Background>
-      <Section>
+      <Section style={{ padding: "4rem 0rem" }}>
         <Column>
           <ServiceColumn
             service="LOGISTICS KNOWLEDGE"
@@ -118,6 +118,7 @@ PRODUCTION, DESIGN, & MARKETING"
       <Contact />
       <p
         style={{
+          width: "80vw",
           textAlign: "center",
           margin: "0rem auto",
           color: "black",

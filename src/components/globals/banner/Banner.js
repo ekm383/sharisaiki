@@ -57,12 +57,16 @@ const BannerWrapper = styled.div`
     img {
       width: 60%;
     }
+    .title {
+      font-size: 3.5rem;
+      line-height: 3rem;
+    }
     .titleSmall {
       font-size: 2rem;
       line-height: 2rem;
     }
     .subtitle {
-      font-size: 0.8rem;
+      font-size: 1rem;
       font-weight: 400;
       line-height: 1.2rem;
     }

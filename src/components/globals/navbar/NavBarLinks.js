@@ -70,7 +70,7 @@ const LinkWrapper = styled.ul`
       padding: 0.8rem 1.5rem;
     }
   }
-  height: ${props => (props.open ? "310px" : "0px")};
+  height: ${props => (props.open ? "335px" : "0px")};
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 `

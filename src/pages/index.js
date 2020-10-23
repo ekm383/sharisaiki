@@ -110,6 +110,7 @@ PRODUCTION, DESIGN, & MARKETING"
         width: "100vw",
         padding: "2rem 0rem",
         backgroundColor: "#f1f1f1",
+        flexDirection: "column",
       }}
     >
       <h3 style={{ fontSize: "4rem", color: "#000000", margin: "2rem auto" }}>
@@ -140,7 +141,7 @@ PRODUCTION, DESIGN, & MARKETING"
         style={{ border: "0" }}
         allowfullscreen=""
         aria-hidden="false"
-        tabindex="0"
+        // tabindex="0"
       ></iframe>
     </Section>
   </Layout>

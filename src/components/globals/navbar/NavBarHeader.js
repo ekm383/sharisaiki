@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 import { FaBars } from "react-icons/fa"
 import styled from "styled-components"
 import logo from "../../../images/1omni-logo.png"
+import ClientOnly from "../../../hooks/ClientOnly"
+import Search from "../../search"
 
 const NavBarHeader = ({ handleNavBar }) => {
   return (
@@ -10,6 +12,9 @@ const NavBarHeader = ({ handleNavBar }) => {
       <Link to="/">
         <img src={logo} alt="logo" width="60" />
       </Link>
+      <ClientOnly>
+        <Search />
+      </ClientOnly>
       <FaBars
         className="toggle-icon"
         onClick={() => {

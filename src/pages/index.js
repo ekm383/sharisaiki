@@ -134,6 +134,7 @@ PRODUCTION, DESIGN, & MARKETING"
     </Section>
     <Section style={{ width: "100vw" }}>
       <iframe
+        title="map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.6625501214494!2d-118.06315674871676!3d34.05252628051081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d08b45f60f19%3A0xe4554a8e6a7d56f9!2s2023%20Chico%20Ave%2C%20South%20El%20Monte%2C%20CA%2091733!5e0!3m2!1sen!2sus!4v1593653845479!5m2!1sen!2sus"
         width="100%"
         height="400"

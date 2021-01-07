@@ -14,6 +14,8 @@ import ServiceColumn from "../components/serviceColumn"
 import Gallery from "../components/gallery"
 import ServiceRow from "../components/serviceRow"
 import Contact from "../components/Contact"
+import ClientOnly from "../hooks/ClientOnly"
+import Search from "../components/search"
 
 const IndexPage = () => (
   <Layout>
@@ -29,6 +31,18 @@ const IndexPage = () => (
       ]}
     />
     <HeaderIndex>
+      <div
+        style={{
+          width: "250px",
+          height: "auto",
+          float: "right",
+          paddingTop: "60px",
+        }}
+      >
+        <ClientOnly>
+          <Search />
+        </ClientOnly>
+      </div>
       <Section style={{ height: "70vh", width: "100vw", alignItems: "center" }}>
         <Banner
           title="EVERYTHING YOU NEED FOR YOUR BRAND"
@@ -42,6 +56,7 @@ const IndexPage = () => (
         </Banner>
       </Section>
     </HeaderIndex>
+
     <Section id="agency" style={{ width: "100vw" }}>
       <Background>
         <Intro

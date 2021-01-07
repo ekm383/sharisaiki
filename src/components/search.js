@@ -1,9 +1,10 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import styled from "styled-components"
 
 const search = () => {
   return (
-    <div>
+    <SearchWrapper>
       <Helmet>
         <script
           async
@@ -11,8 +12,14 @@ const search = () => {
         ></script>
       </Helmet>
       <div className="gcse-search"></div>
-    </div>
+    </SearchWrapper>
   )
 }
+
+const SearchWrapper = styled.div`
+  .gsc-control-cse .gsc-control-cse-en {
+    background-color: none !important;
+  }
+`
 
 export default search

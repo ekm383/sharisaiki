@@ -1,7 +1,34 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
-
-// You can delete this file if you're not using it
+;(function () {
+  var s = document.createElement("script"),
+    e = !document.body ? document.querySelector("head") : document.body
+  s.src = "https://acsbapp.com/apps/app/dist/js/app.js"
+  s.async = true
+  s.onload = function () {
+    acsbJS.init({
+      statementLink: "",
+      footerHtml: "",
+      hideMobile: false,
+      hideTrigger: false,
+      language: "en",
+      position: "right",
+      leadColor: "#146FF8",
+      triggerColor: "#146FF8",
+      triggerRadius: "50%",
+      triggerPositionX: "right",
+      triggerPositionY: "bottom",
+      triggerIcon: "people",
+      triggerSize: "medium",
+      triggerOffsetX: 20,
+      triggerOffsetY: 20,
+      mobile: {
+        triggerSize: "small",
+        triggerPositionX: "right",
+        triggerPositionY: "center",
+        triggerOffsetX: 0,
+        triggerOffsetY: 0,
+        triggerRadius: "50%",
+      },
+    })
+  }
+  e.appendChild(s)
+})()

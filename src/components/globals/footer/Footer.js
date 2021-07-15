@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import Section from "../section/Section"
+import { Link } from "gatsby"
 
 class Footer extends Component {
   state = {
@@ -12,17 +13,17 @@ class Footer extends Component {
       },
       {
         id: 1,
-        path: "#about",
+        path: "/about",
         text: "About",
       },
       {
         id: 2,
-        path: "#services",
+        path: "/services",
         text: "Services",
       },
       {
         id: 3,
-        path: "#contact",
+        path: "/contact",
         text: "Contact",
       },
     ],
@@ -51,14 +52,14 @@ class Footer extends Component {
           </div>
           <div className="box box-right">
             {this.state.links.map(item => (
-              <a
-                href={item.path}
+              <Link
+                to={item.path}
                 key={item.id}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {item.text}
-              </a>
+              </Link>
             ))}
           </div>
         </Section>

@@ -58,7 +58,7 @@ const About = () => {
               For Shari Saiki Design Studio, it is our nature to forge lasting
               relationships and loyal bonds with each and every client. Always
               listening, always educating, always creating and always producing
-              impeccably designed spaces, places, and environments … on time, on
+              impeccably designed spaces, places, and environments…on time, on
               scope, on budget.
             </p>
             <p style={{ lineHeight: "1.7rem", marginBottom: "2rem" }}>
@@ -102,7 +102,7 @@ const About = () => {
             markets.
           </p>
           <p style={{ lineHeight: "1.7rem", marginBottom: "2rem" }}>
-            In 2005, Shari and her husband Bryan Kitashimacreated MESH by Shari
+            In 2005, Shari and her husband Bryan Kitashima created MESH by Shari
             Saiki, a home furnishings store in Honolulu. MESH provides fresh,
             bold and artful furniture with a quick-ship approach to customized
             shopping.

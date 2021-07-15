@@ -35,7 +35,7 @@ const ContactCopy = () => {
           </p>
           <br />
           <p>
-            <strong>Stephanie Schlink Sr.</strong> <br /> Interior Designer{" "}
+            <strong>Stephanie Schlink </strong> <br /> Sr. Interior Designer{" "}
             <br />
             stephanie@sharisaiki.com <br /> 808.536.4044 ext. 2
           </p>

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import Button from "../components/globals/button/Button"
 
@@ -6,7 +7,11 @@ const CTA = ({ copy }) => {
   return (
     <CTAWrapper>
       <h3>{copy}</h3>
-      <Button>CONTACT</Button>
+      <Button>
+        <Link className="cta-button" to="/contact">
+          CONTACT
+        </Link>
+      </Button>
     </CTAWrapper>
   )
 }
@@ -22,6 +27,9 @@ const CTAWrapper = styled.div`
     line-height: 1.9rem;
     color: var(--mainColor);
     width: 50%;
+  }
+  .cta-button {
+    color: #ffffff;
   }
   @media (max-width: 768px) {
     h3 {

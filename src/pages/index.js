@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 import HeaderIndex from "../components/globals/header/HeaderIndex"
 import Banner from "../components/globals/banner/Banner"
 import Section from "../components/globals/section/Section"
@@ -41,16 +42,18 @@ const IndexPage = () => (
           innovators, and fervent implementers that create spaces, places, and environments
           composed of Artistry, Tempo, Luxury, Livability, and Legacy."
         >
-          <Button
-            style={{
-              marginLeft: "2rem",
-              background: "var(--darkGray)",
-              border: "var(--darkGray)",
-              fontSize: "1rem",
-            }}
-          >
-            CONTACT
-          </Button>
+          <Link to="/contact">
+            <Button
+              style={{
+                marginLeft: "2rem",
+                background: "var(--darkGray)",
+                border: "var(--darkGray)",
+                fontSize: "1rem",
+              }}
+            >
+              CONTACT
+            </Button>
+          </Link>
         </Banner>
       </Section>
     </HeaderIndex>

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `1OMNI`,
-    description: `Full Service Agency Offering Production, Design, & Marketing`,
-    author: `@1omni`,
+    title: `Shari Saiki`,
+    description: `Interior Design in Honolulu Hawaii`,
+    author: `@meshsharisaiki`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,15 +31,14 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/1omni-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/shari-saiki-icon.png`,
       },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Bebas Neue\:400`,
-          `Open Sans\:400,700`, // you can also specify font weights and styles
+          `Roboto\:400,700`, // you can also specify font weights and styles
         ],
         display: "swap",
       },

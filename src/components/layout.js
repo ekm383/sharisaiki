@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import "./layout.css"
-import NavBar from "../components/globals/navbar/NavBar"
+import NavBar from "../components/globals/nav/NavBar"
 import Copyright from "../components/globals/footer/Copyright"
 
 if (typeof window !== "undefined") {

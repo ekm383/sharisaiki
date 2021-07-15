@@ -4,8 +4,8 @@
 }
 
 :root {
-  --mainColor: #575757;
-  --secondaryColor: #ffda71;
+  --mainColor: #749b7e;
+  --secondaryColor: rgb(199, 212, 209);
   --darkGray: #171717;
   --gray: #666666;
   --lightGray: #818181;
@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   background-color: var(--white);
   color: var(--gray);
 }
@@ -25,36 +25,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Bebas Neue";
-}
-
-h4,
-h6 {
-  text-transform: uppercase;
-}
-h2 {
-  font-size: 4rem;
-  font-weight: 400;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-
-p {
-  font-size: 0.8rem;
-  line-height: 1.5rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-svg {
-  vertical-align: middle;
-  font-size: 1.2rem;
-}
-
-span {
-  color: var(--mainColor);
-  font-weight: bold;
-  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 700;
 }

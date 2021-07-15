@@ -1,0 +1,35 @@
+import React from "react"
+import styled from "styled-components"
+import Button from "../components/globals/button/Button"
+
+const CTA = ({ copy }) => {
+  return (
+    <CTAWrapper>
+      <h3>{copy}</h3>
+      <Button>CONTACT</Button>
+    </CTAWrapper>
+  )
+}
+
+const CTAWrapper = styled.div`
+  width: 80vw;
+  margin: 0rem auto 0rem auto;
+  padding: 9rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    color: var(--mainColor);
+    width: 50%;
+  }
+  @media (max-width: 768px) {
+    h3 {
+      margin-bottom: 2rem;
+      width: 100%;
+      font-size: 1.2rem;
+    }
+  }
+`
+
+export default CTA

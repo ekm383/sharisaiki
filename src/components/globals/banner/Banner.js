@@ -1,12 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
-const Banner = ({ style, title, titleSmall, subtitle, children }) => {
+const Banner = ({ style, subtitle, children }) => {
   return (
     <BannerWrapper style={style}>
       <div className="box">
-        <h1 className="title">{title}</h1>
-        <h2 className="titleSmall">{titleSmall}</h2>
         <h3 className="subtitle">{subtitle}</h3>
         {children}
       </div>
@@ -15,10 +13,13 @@ const Banner = ({ style, title, titleSmall, subtitle, children }) => {
 }
 
 const BannerWrapper = styled.div`
-  width: 80%;
+  width: 100%;
+  height: 60vh;
   margin: 0px auto;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   color: var(--white);
   .box {
     flex-basis: 80%;
@@ -27,27 +28,20 @@ const BannerWrapper = styled.div`
   img {
     width: 50%;
   }
-  .title,
   .subtitle {
-    margin-top: 0px;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 2rem;
+    border-left: 2px solid #ffffff;
+    padding-left: 2rem;
   }
-  .title {
-    font-size: 6rem;
-    line-height: 5rem;
-    text-transform: uppercase;
-  }
-  .titleSmall {
-    line-height: 4rem;
-  }
-  .subtitle {
-    font-size: 1.4rem;
-    font-weight: lighter;
-    line-height: 1.2rem;
-    letter-spacing: 1px;
+  @media (max-height: 900px) {
+    height: 90vh;
   }
   @media (max-width: 768px) {
-    flex-basis: 90%;
+    flex-basis: 100%;
+    height: 50vh;
     justify-content: flex-start;
     .box {
       flex-basis: 100%;
@@ -57,20 +51,12 @@ const BannerWrapper = styled.div`
     img {
       width: 60%;
     }
-    .title {
-      padding-top: 3rem;
-      font-size: 4rem;
-      line-height: 3.3rem;
-      letter-spacing: 0px;
-    }
-    .titleSmall {
-      font-size: 2rem;
-      line-height: 2rem;
-    }
     .subtitle {
+      margin: 0;
       font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.2rem;
+      font-weight: 700;
+      line-height: 1.5rem;
+      text-align: left;
     }
   }
 `

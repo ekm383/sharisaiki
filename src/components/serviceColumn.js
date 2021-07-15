@@ -5,7 +5,7 @@ const serviceColumn = ({ service, description }) => {
   return (
     <Wrapper>
       <div>
-        <h3>{service}</h3>
+        <h3>[ {service} ]</h3>
         <p>{description}</p>
       </div>
     </Wrapper>
@@ -15,16 +15,16 @@ const serviceColumn = ({ service, description }) => {
 const Wrapper = styled.div`
   margin-bottom: 2rem;
   h3 {
-    font-size: 2rem;
-    letter-spacing: 1px;
-    color: #000000;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--mainColor);
   }
   p {
-    line-height: 1.3rem;
+    line-height: 1.5rem;
   }
   @media (max-width: 768px) {
     h3 {
-      font-size: 1.6rem;
+      font-size: 1rem;
     }
   }
 `

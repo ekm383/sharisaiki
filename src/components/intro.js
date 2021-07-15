@@ -11,22 +11,27 @@ const Intro = ({ intro }) => {
 
 const IntroWrapper = styled.div`
   width: 80vw;
-  margin: 0rem auto 2rem auto;
-  padding-top: 4rem;
+  margin: 0rem auto 0rem auto;
+  padding-top: 8rem;
   display: flex;
   h3 {
-    font-size: 4rem;
-    color: #000000;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: var(--mainColor);
+    width: 50%;
   }
   p {
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 4rem;
-    font-family: "Bebas Neue";
+    font-family: "Roboto";
     color: black;
   }
   @media (max-width: 768px) {
     h3 {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      width: 100%;
+      margin-bottom: 2rem;
     }
   }
 `

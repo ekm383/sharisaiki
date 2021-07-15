@@ -1,25 +1,29 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import Section from "../section/Section"
-import { FaInstagram, FaFacebook, FaGoogle } from "react-icons/fa"
 
 class Footer extends Component {
   state = {
-    icons: [
+    links: [
       {
-        id: 2,
-        icon: <FaInstagram className="icon facebook-instagram" />,
-        path: "https://www.instagram.com/restaurantmarketinghawaii",
-      },
-      {
-        id: 3,
-        icon: <FaGoogle className="icon google-icon" />,
-        path: "https://www.google.com/restaurantmarketinghawaii",
+        id: 0,
+        path: "/",
+        text: "Home",
       },
       {
         id: 1,
-        icon: <FaFacebook className="icon facebook-icon" />,
-        path: "https://www.facebook.com/restaurantmarketinghawaii",
+        path: "#about",
+        text: "About",
+      },
+      {
+        id: 2,
+        path: "#services",
+        text: "Services",
+      },
+      {
+        id: 3,
+        path: "#contact",
+        text: "Contact",
       },
     ],
   }
@@ -28,32 +32,32 @@ class Footer extends Component {
       <FooterWrapper>
         <Section>
           <div className="box">
-            <h4>Contact:</h4>
+            <h4>SHOWROOM & OFFICE</h4>
             <p>
-              2334 S King St,
+              677 Ala Moana Blvd Suite #108
               <br />
-              Honolulu, HI 96826
+              Honolulu, Hawaii 96813
             </p>
-            <p className="phone">(808) 955-5080</p>
-            <p>Open Daily 10:30am - 9:00pm</p>
+            <p className="phone">
+              Tel: 808.536.4044 (Design Studio) <br />
+              Tel: 808.536.6374 (Mesh Retail)
+            </p>
           </div>
           <div className="box">
-            <h4>About Us:</h4>
+            <h4>HOURS</h4>
             <p>
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took.
+              Monday - Saturday: 10:00am - 6:00pm <br /> Sunday: Closed
             </p>
           </div>
-          <div className="box">
-            <h4>Follow Us:</h4>
-            {this.state.icons.map(item => (
+          <div className="box box-right">
+            {this.state.links.map(item => (
               <a
                 href={item.path}
                 key={item.id}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {item.icon}
+                {item.text}
               </a>
             ))}
           </div>
@@ -71,11 +75,11 @@ const FooterWrapper = styled.div`
   justify-content: space-around;
   align-items: flex-start;
   height: 100%;
-  background: var(--darkGray);
+  background: var(--gray);
   color: var(--white);
   h4 {
-    font-size: 2rem;
-    letter-spacing: 1px;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
   }
   .nav {
     display: flex;
@@ -87,13 +91,21 @@ const FooterWrapper = styled.div`
   .phone {
     font-size: 0.7rem;
     line-height: 1.2rem;
+    margin-top: 1rem;
   }
   .box {
     flex-basis: 30%;
   }
+  .box-right {
+    display: flex;
+    justify-content: flex-end;
+  }
   a {
     color: var(--white);
-    margin-right: 5px;
+    font-size: 0.7rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: 700;
   }
   @media (max-width: 768px) {
     padding: 1rem 0rem 3rem 0rem;

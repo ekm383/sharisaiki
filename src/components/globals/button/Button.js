@@ -8,21 +8,21 @@ const Button = ({ children, style }) => {
 const ButtonWrapper = styled.button`
   /* width: 10rem; */
   display: block;
-  margin-top: 2rem;
+  margin: 2rem auto;
   color: white;
-  background: #d8b87b;
-  border: 1px solid #d8b87b;
-  border-radius: 50px;
+  background: var(--mainColor);
+  border: 2px solid var(--mainColor);
+  border-radius: 10px;
   cursor: pointer;
-  padding: 1rem 2rem;
-  font-family: "Open Sans";
-  font-size: 1rem;
-  font-weight: 700;
+  padding: 1rem 4rem;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  letter-spacing: 4px;
   transition: all 0.2s linear;
   &:hover {
     background: transparent;
-    border: 1px solid var(--white);
-    color: var(--white);
+    border: 2px solid var(--mainColor);
+    color: var(--mainColor);
   }
   &:focus {
     outline: none;

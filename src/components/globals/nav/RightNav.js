@@ -27,7 +27,7 @@ class RightNav extends Component {
       },
       {
         id: 4,
-        path: "/mesh",
+        path: "https://meshbysharisaiki.netlify.app/",
         text: "[ MESH ]",
       },
     ],

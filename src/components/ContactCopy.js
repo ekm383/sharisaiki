@@ -8,9 +8,11 @@ const ContactCopy = () => {
         <div>
           <h3>SHOWROOM & OFFICE</h3>
           <p>
-            677 Ala Moana Blvd Suite #108 Honolulu, Hawaii 96813
-            <br />
-            <br /> Tel: 808.536.4044 (Design Studio) <br />
+            4211 Waialae Avenue 
+            <br/> Honolulu, Hawaii 96816 
+            <br/> Kahala Mall - Upper Deck
+            <br/>
+            <br/> Tel: 808.536.4044 (Design Studio) <br />
             Tel: 808.536.6374 (Mesh Retail)
           </p>
           <h3>BUSINESS AND OPERATIONS</h3>

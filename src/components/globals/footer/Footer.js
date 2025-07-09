@@ -35,9 +35,11 @@ class Footer extends Component {
           <div className="box">
             <h4>SHOWROOM & OFFICE</h4>
             <p>
-              677 Ala Moana Blvd Suite #108
+              4211 Waialae Avenue
               <br />
-              Honolulu, Hawaii 96813
+              Honolulu, Hawaii 96816
+              <br/>
+              Kahala Mall - Upper Deck
             </p>
             <p className="phone">
               Tel: 808.536.4044 (Design Studio) <br />
